@@ -1,3 +1,7 @@
+# General Elements
+
+This section covers the most general and used structural elements of the HTML language.
+
 ## DOCTYPE
 
 This element determines the rules for **rendering** the HTML language. It is used usually at the beggining of any `html` file as follows:
@@ -11,7 +15,7 @@ This element determines the rules for **rendering** the HTML language. It is use
 This element wraps all the content on the page. It is known as the root element:
 
 ```html
-<html lang='en-US'>
+<html lang="en-US">
 ```
 
 ## Head
@@ -33,9 +37,72 @@ Contains the page title showed in the browser tab:
     <img src='src/title.png' />
 </p>
 
+Markdown syntax is as follows:
+
 ```html
-<head>
-    <meta charset="utf-8" />
-    <title>My test page</title>
-</head>
+<title>My test page</title>
 ```
+
+## Body
+
+This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.
+
+```html
+<body>
+    <h1>Content</h1>
+</body>
+```
+
+# Common Tags
+
+## h1
+
+Used for define a document title.
+
+```html
+<h1>Doc title</h1>
+```
+
+## p
+
+Used for define a paragraph.
+
+```html
+<p>Paragraph</p>
+```
+
+## img
+
+Used for embed an image in the document content. There are 4 important properties for embedding images:
+
+* **src**: link or local path to image
+* **alt**: image title or description
+* **height**: image height in pixels
+* **width**: image width in pixels
+
+```html
+<img src="https://exampleimage.com" alt="image description" height=400 width=400 />
+```
+
+## anchor
+
+Used for embed links in the document content. The `href` property is used in this tag to save the final URL.
+
+```html
+<a href="https://www.example.com">Text with Redirection</a>
+```
+
+# Entity References
+
+| Literal Character  | Reference |
+| :----------------: | :-------: |
+| <                  | `&lt;`    |
+| >                  | `&gt;`    |
+| "                  | `&quot;`  |
+| '                  | `&apos;`  |
+| &                  | `&amp;`   |
+
+# Important Links
+
+* [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+* [Google's WebMaster Tool](https://search.google.com/search-console/about?hl=en)
