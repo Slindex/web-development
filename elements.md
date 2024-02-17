@@ -92,6 +92,16 @@ Used for embed links in the document content. The `href` property is used in thi
 <a href="https://www.example.com">Text with Redirection</a>
 ```
 
+## span
+
+Used for applying css or javascript to a specific element without giving any extra meaning.
+
+```html
+<span style="font-size: 32px; margin: 21px 0; display: block;">
+  Is this a top level heading?
+</span>
+```
+
 # Entity References
 
 | Literal Character  | Reference |
