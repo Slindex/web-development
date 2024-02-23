@@ -91,6 +91,22 @@ Used for embed links in the document content. The `href` property is used in thi
 ```html
 <a href="https://www.example.com">Text with Redirection</a>
 ```
+Anchor can also be used to reference internal links just by specifying the .html file location path.
+
+```html
+<a href="s1/s2/text-start.html">Additional information</a>
+```
+We can use the anchor tag to set up links for downloading files of any type. Just adding the file location path and the `download` property to the tag.
+
+```html
+<a href="files/DST-promotions.xlsx" download="DST-promotions.xlsx">Excel File</a>
+```
+
+Finally, we can use anchor with the `mailto:` URL scheme to set a link that forwards to an email format ready to be sent.
+
+```html
+<a href="mailto:fr0xonem1@gmail.com">contact email</a>
+```
 
 ## span
 
@@ -100,6 +116,60 @@ Used for applying css or javascript to a specific element without giving any ext
 <span style="font-size: 32px; margin: 21px 0; display: block;">
   Is this a top level heading?
 </span>
+```
+## ul
+
+The `ul` tag is used to create unordered lists, items inside lists should go with the `li` tag.
+
+```html
+<h2>Shopping List<h2>
+<ul>
+    <li>Meat</li>
+    <li>Vegetables</li>
+    <li>Fish</li>
+    <li>Drinks</li>
+    <li>Fruits</li>
+</ul>
+```
+## ol
+
+Is the same as `ul`, but the `ol` tag is used to create ordered lists. items inside lists should go with the `li` tag.
+
+```html
+<h2>Meeting Agenda<h2>
+<ol>
+    <li>Welcoming</li>
+    <li>Introduction</li>
+    <li>Onboarding</li>
+    <li>Questions and Answers</li>
+    <li>Conclusions</li>
+</ol>
+```
+
+# Text Formatting
+
+## strong
+
+The `strong` tag is used to give text **bold** formatting, used as follows.
+
+```html
+<p>This is really <strong>hard!</strong></p>
+```
+
+## em
+
+The `em` property is used to emphasize text and give it *Italics* format.
+
+```html
+<p>The most challenging task in life is <em>beat yourself</em></p>
+```
+
+## mark
+
+The `mark` tag is used to <mark>highlight</mark> text.
+
+```html
+<p>The <mark>meat</mark> is the most delicious plate<p>
 ```
 
 # Entity References
