@@ -8,10 +8,10 @@
             content="This page provides information about the popular survival game Don't Starve" />
         <title>Don't Starve forum - All about the DS videogame</title>
         <!-- Favicons Section -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+        <link rel="manifest" href="../favicons/site.webmanifest">
     </head>
     <body>
         <h1>What is Don't Starve?</h1>
@@ -24,7 +24,7 @@
             <a href="https://store.steampowered.com/app/219740/Dont_Starve/?l=spanish">Steam Page</a>.
             If you want to find more information about best dates and promotions to purchase this game
             please download this
-            <a href="files/DST-promotions.xlsx" download="DST-promotions.xlsx">Excel File</a> that contains all the information you need!
+            <a href="../files/DST-promotions.xlsx" download="DST-promotions.xlsx">Excel File</a> that contains all the information you need!
         </p>
         <h2>Index</h2>
         <ol>
@@ -38,16 +38,25 @@
                 <a href="#top_most_useful_items">Top Most Useful Items</a>
             </li>
             <li>
+                <a href="#dialogues">Dialogues</a>
+            </li>
+            <li>
+                <a href="#relevant_commands">Relevant Commands</a>
+            </li>
+            <li>
                 <a href="#characters">Characters</a>
             </li>
             <li>
                 <a href="#guide_for_begginers">Guide for Begginers</a>
             </li>
+            <li>
+                <a href="#more_information">More Information</a>
+            </li>
         </ol>
         <h2 id="reference_images">Reference Images</h2>
         <!-- This is the image section-->
         <img src="https://image.api.playstation.com/cdn/UP2107/CUSA00158_00/sS3tYwPkS3nYsLgup8UPjVifM6rkTdkz.png" alt="Don't Starve RoG" height="500" width="500"/>
-        <img src="src/dsh.avif" alt="Don't Starve Hamlet" height="500" width="700"/>
+        <img src="../images/dsh.avif" alt="Don't Starve Hamlet" height="500" width="700"/>
 
         <p>Some of the Don't Starve <em>Japanese</em> fans say this about the game: ご飯が熱い。</p>
 
@@ -72,12 +81,51 @@
             <li>CrockPot</li>
         </ol>
 
+        <h2 id="dialogues">Dialogues</h2>
+        <blockquote
+            cite="https://dontstarve.fandom.com/wiki/Wilson/Quotes">
+            <p>
+                "I'm one heck of a scientist"
+                <cite>-Wilson</cite>
+            </p>
+        </blockquote>
+        <p>
+            When Wilson is freezing he says: <q cite="https://dontstarve.fandom.com/wiki/Wilson/Quotes">
+                Oh! So cold...
+            </q>
+        </p>
+
+        <h2 id="relevant_commands">Relevant Commands</h2>
+        <pre>
+            <code>
+    from typing import List
+    
+    list = [1,4,3,4,5,4,1,3,4,5,6,7,4]
+
+    def remove4(list: List[int]) -> bool:
+        modified = False
+
+        for num in list:
+            if num == 4:
+                list.remove(num)
+                modified = True
+        
+        return modified
+
+    remove4(list)
+            </code>
+    <strong>Expected Output:</strong>
+        <samp>
+    True
+        </samp>
+        </pre>
+
         <h2 id="characters">Characters</h2>
         <dl>
             <dt>Wilson</dt>
             <dd>Is the main character and don't have upsides nor downsides.</dd>
             <dt>Willow</dt>
-            <dd>Is a pyromaniac with a teddy bear that protects her at nights.</dd>
+            <dd>Is a <abbr title="pyromaniac">pyro</abbr> with a teddy bear that protects her at nights.</dd>
             <dt>Wanda</dt>
             <dd>Is the twin of her dead sister who helps her when she need it.</dd>
         </dl>
@@ -85,11 +133,15 @@
         <a href="https://www.youtube.com/watch?v=hw0thrWVaKQ">
             <img src="https://i.ytimg.com/vi/hw0thrWVaKQ/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDaMuTLM0AGKfDYc-JM3w8RsIVi2A" alt="Video Miniature">
         </a>
+        <h2 id="more_information">More Information</h2>
         <p>
             For more information about Don't Starve please visit the
-            <a href="s1/s2/text-start.html">Additional information</a>
+            <a href="additional_information.html">Additional information</a>
             section. You can also send us a message through our 
-            <a href="mailto:fr0xonem1@gmail.com">contact email</a>
+            <a href="mailto:fr0xonem1@gmail.com">contact email.</a>
+        </p>
+        <p>
+            This blog was updated at <time datetime="2024-03-11T19:16">7:16pm, 11 March 2024</time>
         </p>
     </body>
 </html>
